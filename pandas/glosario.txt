@@ -1,0 +1,69 @@
+Glossary
+Below is the summary of all the functions and methods that you learned in this lesson:
+
+Category: Initialization and Utility
+Function/Method	Description
+pandas.read_csv(relative_path_to_file)(opens in a new tab)
+Reads a comma-separated values (csv) file present at relative_path_to_file and loads it as a DataFrame
+
+pandas.DataFrame(data)(opens in a new tab)	
+Returns a 2-D heterogeneous tabular data. Note: 
+There are other optional arguments as well that you can use to create a dataframe.
+pandas.Series(data, index)(opens in a new tab)	
+Returns 1-D ndarray with axis labels
+pandas.Series.shape
+pandas.DataFrame.shape	
+Returns a tuple representing the dimensions
+pandas.Series.ndim
+pandas.DataFrame.ndim	
+Returns the number of the dimensions (rank). It will return 1 in case of a Series
+pandas.Series.size
+pandas.DataFrame.size	
+Returns the number of elements
+pandas.Series.values	
+Returns the data available in the Series
+pandas.Series.index	
+Returns the indexes available in the Series
+pandas.DataFrame.isnull()(opens in a new tab)	
+Returns a same sized object having True for NaN elements and False otherwise.
+pandas.DataFrame.count(axis)(opens in a new tab)	
+Returns the count of non-NaN values along the given axis. If axis=0, it will count down the dataframe, meaning column-wise count of non-NaN values.
+pandas.DataFrame.head([n])(opens in a new tab)	
+Return the first n rows from the dataframe. By default, n=5.
+pandas.DataFrame.tail([n])(opens in a new tab)	
+Return the last n rows from the dataframe. By default, n=5. Supports negative indexing as well.
+pandas.DataFrame.describe()(opens in a new tab)	Generate the descriptive statistics, such as, count, mean, std deviation, min, and max.
+pandas.DataFrame.min()(opens in a new tab)	
+Returns the minimum of the values along the given axis.
+pandas.DataFrame.max()(opens in a new tab)	
+Returns the maximum of the values along the given axis.
+pandas.DataFrame. mean()(opens in a new tab)	
+Returns the mean of the values along the given axis.
+pandas.DataFrame.corr()(opens in a new tab)	
+Compute pairwise correlation of columns, excluding NA/null values.
+pandas.DataFrame.rolling(windows)(opens in a new tab)	
+Provide rolling window calculation, such as pandas.DataFrame.rolling(15).mean() for rolling mean over window size of 15.
+pandas.DataFrame.loc[label](opens in a new tab)	Access a group of rows and columns by label(s)
+pandas.DataFrame.groupby(mapping_function)(opens in a new tab)
+Groups the dataframe using a given mapper function or or by a Series of columns.
+
+Category: Manipulation
+Function/Method	Description
+pandas.Series.drop(index)(opens in a new tab)	
+Drops the element positioned at the given index(es)
+pandas.DataFrame.drop(labels)(opens in a new tab)	
+Drop specified labels (entire columns or rows) from the dataframe.
+pandas.DataFrame.pop(item)(opens in a new tab)	
+Return the item and drop it from the frame. If not found, then raise a KeyError.
+pandas.DataFrame.insert(location, column, values)(opens in a new tab)	
+Insert column having given values into DataFrame at specified location.
+pandas.DataFrame.rename(dictionary-like)(opens in a new tab)	
+Rename label(s) (columns or row-indexes) as mentioned in the dictionary-like
+pandas.DataFrame.set_index(keys)(opens in a new tab)	
+Set the DataFrame's row-indexes using existing column-values.
+pandas.DataFrame.dropna(axis)(opens in a new tab)	
+Remove rows (if axis=0) or columns (if axis=1) that contain missing values.
+pandas.DataFrame.fillna(value, method, axis)(opens in a new tab)	
+Replace NaN values with the specified value along the given axis, and using the given method (‘backfill’, ‘bfill’, ‘pad’, ‘ffill’, None)
+pandas.DataFrame.interpolate(method, axis)(opens in a new tab)	
+Replace the NaN values with the estimated value calculated using the given method along the given axis.
