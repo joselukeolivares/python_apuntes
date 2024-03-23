@@ -44,3 +44,5 @@ data.groupby(['Name'])['Salary'].sum()
 #1.13 Se muestra distribución de salario  por departamento por año
 data.groupby(['Year','Department'])['Salary'].sum()
 
+
+
