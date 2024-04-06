@@ -1,0 +1,11 @@
+Install Anaconda on Windows Ubuntu Terminal
+https://gist.github.com/kauffmanes/5e74916617f9993bc3479f401dfec7da
+
+psycopg2
+https://pynative.com/python-postgresql-tutorial/
+
+uninstall python
+https://gist.github.com/zhensongren/811dcf2471f663ed3148a272f1faa957
+
+install postgresql in wsl2
+https://medium.com/@RobertoSilvaZ/instalar-postgres-en-wsl2-96810563f177
